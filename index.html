@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dinesh Kumar | Full Stack Developer & Data Analytics Enthusiast</title>
+  <meta name="description" content="Portfolio of Dinesh Kumar - B.Tech IT student, Full Stack Developer, and Data Analytics Enthusiast with expertise in React, Node, SQL, Snowflake, and web development.">
+  
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Outfit & Plus Jakarta Sans fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="main-header">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-text">DK</span><span class="logo-dot">.</span>
+      </a>
+      
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu-desktop">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#leadership" class="nav-link">Leadership</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary nav-cta-btn">
+          <span>Hire Me</span>
+          <i class="fas fa-paper-plane"></i>
+        </a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-overlay" id="mobile-overlay-menu">
+    <nav class="mobile-nav-links">
+      <a href="#home" class="mobile-nav-link">Home</a>
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#skills" class="mobile-nav-link">Skills</a>
+      <a href="#experience" class="mobile-nav-link">Experience</a>
+      <a href="#projects" class="mobile-nav-link">Projects</a>
+      <a href="#achievements" class="mobile-nav-link">Achievements</a>
+      <a href="#leadership" class="mobile-nav-link">Leadership</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- Home / Hero Section -->
+    <section id="home" class="hero-section">
+      <!-- Ambient Background Glows -->
+      <div class="ambient-glow glow-1"></div>
+      <div class="ambient-glow glow-2"></div>
+      
+      <div class="section-container hero-container">
+        <div class="hero-content">
+          <div class="hero-greeting-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">Available for Opportunities</span>
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Dinesh Kumar</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            I am a <span id="typed-role" class="typed-text"></span><span class="typed-cursor">|</span>
+          </h2>
+          <p class="hero-description">
+            Passionate Full Stack Developer and Data Analytics Enthusiast with hands-on experience in building scalable web applications, mining data-driven insights, and optimizing operations. Bridging the gap between code and data.
+          </p>
+          
+          <div class="hero-actions">
+            <a href="resume.pdf" download="Dinesh_Kumar_Resume.pdf" class="btn btn-gradient" id="download-resume-btn">
+              <i class="fas fa-download"></i>
+              <span>Download Resume</span>
+            </a>
+            <a href="#projects" class="btn btn-outline">
+              <span>View Projects</span>
+              <i class="fas fa-arrow-right arrow-icon"></i>
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <span class="socials-label">Connect with me:</span>
+            <div class="social-buttons">
+              <a href="https://github.com/dinesh-kumar" target="_blank" rel="noopener noreferrer" class="social-btn github-btn" aria-label="GitHub">
+                <svg class="social-svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                  <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                </svg>
+                <span>GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/in/dinesh-kumar-a913a2288" target="_blank" rel="noopener noreferrer" class="social-btn linkedin-btn" aria-label="LinkedIn">
+                <svg class="social-svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-graphic">
+          <div class="graphic-glow"></div>
+          <div class="glass-visual-card">
+            <div class="window-header">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="window-title">dinesh_kumar.js</span>
+            </div>
+            <div class="window-body">
+              <pre><code><span class="code-keyword">const</span> developer = {
+  name: <span class="code-string">'Dinesh Kumar'</span>,
+  education: <span class="code-string">'B.Tech in IT'</span>,
+  institution: <span class="code-string">'RGIPT'</span>,
+  skills: [
+    <span class="code-string">'Web Development'</span>,
+    <span class="code-string">'Data Analytics'</span>,
+    <span class="code-string">'Cloud Tech'</span>
+  ],
+  passion: <span class="code-string">'Building scalable systems'</span>,
+  readyToCode: <span class="code-boolean">true</span>
+};
+
+<span class="code-comment">// Let's build something great!</span>
+developer.createImpact();</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to About">
+        <span class="mouse-scroll">
+          <span class="mouse-wheel"></span>
+        </span>
+      </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section scroll-reveal">
+      <div class="section-container">
+        <div class="section-title-wrapper">
+          <h2 class="section-title"><span class="gradient-text">About Me</span></h2>
+          <p class="section-subtitle">A glimpse into my background, education, and philosophies</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Bio Narrative -->
+          <div class="about-info">
+            <h3>Who I Am</h3>
+            <p>
+              I am an undergraduate student pursuing my <strong>Bachelor of Technology in Information Technology</strong> at the <strong>Rajiv Gandhi Institute of Petroleum Technology</strong> (2023-2027).
+            </p>
+            <p>
+              My journey in tech is driven by an insatiable curiosity for how things work under the hood. Over the years, I have built skills in modern full-stack web development and data analytics. I enjoy taking complex datasets and turning them into digestible, interactive dashboards, as well as building clean, responsive web apps.
+            </p>
+            <p>
+              Whether it is orchestrating workflows, coding algorithms in C++, writing robust backend services, or visualizing analytics trends, I look forward to taking on challenges that yield measurable real-world impact.
+            </p>
+
+            <div class="education-card">
+              <div class="edu-icon-box">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="edu-details">
+                <h4>Bachelor of Technology in Information Technology</h4>
+                <p class="edu-institution">Rajiv Gandhi Institute of Petroleum Technology</p>
+                <div class="edu-meta">
+                  <span class="edu-year"><i class="far fa-calendar-alt"></i> 2023 - 2027</span>
+                  <span class="edu-gpa"><i class="fas fa-award"></i> CGPA: 7.58 / 10</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quote Widget & Fun Facts -->
+          <div class="about-extra">
+            <div class="glass-card quote-widget">
+              <div class="quote-header">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <span class="widget-title">Dev & Data Wisdom</span>
+              </div>
+              <blockquote id="quote-display" class="quote-text">
+                "First, solve the problem. Then, write the code."
+              </blockquote>
+              <cite id="quote-author" class="quote-author">— John Johnson</cite>
+              <button id="new-quote-btn" class="btn btn-text-icon">
+                <span>Next Quote</span>
+                <i class="fas fa-sync-alt" id="quote-refresh-icon"></i>
+              </button>
+            </div>
+
+            <div class="fact-grid">
+              <div class="fact-box">
+                <div class="fact-number">NCC</div>
+                <div class="fact-label">TSC Camp Attendee</div>
+              </div>
+              <div class="fact-box">
+                <div class="fact-number">State</div>
+                <div class="fact-label">Football Player</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section scroll-reveal">
+      <div class="section-container">
+        <div class="section-title-wrapper">
+          <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+          <p class="section-subtitle">My technical stack categorized by domain expertise</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Programming Languages -->
+          <div class="skills-category-card glass-card">
+            <div class="skills-category-header">
+              <i class="fas fa-code category-icon"></i>
+              <h3>Programming</h3>
+            </div>
+            <ul class="skills-list">
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">C / C++</span>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="85%"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="80%"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="75%"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">MATLAB</span>
+                  <span class="skill-percentage">60%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="60%"></div></div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Web Development -->
+          <div class="skills-category-card glass-card">
+            <div class="skills-category-header">
+              <i class="fas fa-laptop-code category-icon"></i>
+              <h3>Web Development</h3>
+            </div>
+            <ul class="skills-list">
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">ReactJS</span>
+                  <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="75%"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">NodeJS & ExpressJS</span>
+                  <span class="skill-percentage">70%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="70%"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">HTML5 & CSS3</span>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="90%"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">MongoDB</span>
+                  <span class="skill-percentage">70%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="70%"></div></div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Data Analytics -->
+          <div class="skills-category-card glass-card">
+            <div class="skills-category-header">
+              <i class="fas fa-chart-bar category-icon"></i>
+              <h3>Data Analytics</h3>
+            </div>
+            <ul class="skills-list">
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">SQL</span>
+                  <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="80%"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Pandas & NumPy</span>
+                  <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="75%"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Snowflake</span>
+                  <span class="skill-percentage">65%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="65%"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Matplotlib & Seaborn</span>
+                  <span class="skill-percentage">70%</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 0%" data-width="70%"></div></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Dev & DB Tools -->
+        <div class="tools-container glass-card">
+          <div class="tools-header">
+            <i class="fas fa-tools category-icon"></i>
+            <h3>Tools & Databases</h3>
+          </div>
+          <div class="tools-list">
+            <div class="tool-badge"><i class="fab fa-git-alt"></i> Git</div>
+            <div class="tool-badge"><i class="fab fa-github"></i> GitHub</div>
+            <div class="tool-badge"><i class="fas fa-database"></i> MySQL</div>
+            <div class="tool-badge"><i class="fas fa-terminal"></i> Command Line</div>
+            <div class="tool-badge"><i class="fas fa-server"></i> Rest APIs</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section scroll-reveal">
+      <div class="section-container">
+        <div class="section-title-wrapper">
+          <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+          <p class="section-subtitle">My professional journey and industrial contributions</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">May 2025 - July 2025</div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <div class="role-company">
+                  <h3>Founding Engineer</h3>
+                  <h4 class="company-name">LeSo</h4>
+                </div>
+                <span class="experience-badge">Internship</span>
+              </div>
+              <ul class="experience-details">
+                <li>Collaborated directly with the CEO and CPO to architect CRM systems, streamline user journeys, and establish operational pipelines.</li>
+                <li>Implemented backend automation workflows that automated communication, saving 15+ weekly hours of manual effort.</li>
+                <li>Leveraged marketing operations platforms to structure lead-generation data flow and optimize conversion cycles.</li>
+                <li>Participated in strategic planning sessions for business growth initiatives, aligning technical implementations with business objectives.</li>
+              </ul>
+              <div class="experience-tags">
+                <span class="tag">CRM Systems</span>
+                <span class="tag">Workflow Automation</span>
+                <span class="tag">Marketing Operations</span>
+                <span class="tag">Business Growth</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section scroll-reveal">
+      <div class="section-container">
+        <div class="section-title-wrapper">
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">A collection of software development and data analytics projects</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: CultureVista -->
+          <div class="project-card glass-card">
+            <div class="project-img-wrapper">
+              <img src="assets/culture_vista.png" alt="CultureVista Dashboard Mockup" class="project-img">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/dinesh-kumar/CultureVista" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="GitHub Repository">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#" class="project-link-btn" aria-label="Live Demo (Placeholder)">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-tag">Data Analytics</span>
+                <span class="project-tag">Cloud</span>
+              </div>
+              <h3 class="project-title">CultureVista</h3>
+              <p class="project-description">
+                An interactive cultural tourism analytics dashboard integrating Snowflake cloud database with Streamlit. Provides deep visual insights on regional monuments, visitors flow, tourism impact, and local growth patterns with real-time analytics.
+              </p>
+              <div class="project-tech">
+                <span>Streamlit</span>
+                <span>Snowflake</span>
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>Matplotlib</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Personal Portfolio -->
+          <div class="project-card glass-card">
+            <div class="project-img-wrapper">
+              <img src="assets/portfolio_preview.png" alt="Personal Portfolio Mockup" class="project-img">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/dinesh-kumar/portfolio" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="GitHub Repository">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#" class="project-link-btn" aria-label="Live Demo (Placeholder)">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-tag">Frontend</span>
+                <span class="project-tag">Interactive</span>
+              </div>
+              <h3 class="project-title">Personal Portfolio Website</h3>
+              <p class="project-description">
+                A highly responsive, recruiter-friendly developer portfolio showcasing a dark modern design. Incorporates a dynamic typing script, interactive quote widgets, CSS transitions, scroll-driven visual highlights, and client-side contact form validation.
+              </p>
+              <div class="project-tech">
+                <span>HTML5</span>
+                <span>Vanilla CSS</span>
+                <span>JavaScript</span>
+                <span>Lucide Icons</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements & Leadership Section -->
+    <section id="achievements" class="achievements-section scroll-reveal">
+      <div class="section-container">
+        <div class="section-title-wrapper">
+          <h2 class="section-title">Beyond <span class="gradient-text">Academics</span></h2>
+          <p class="section-subtitle">My achievements, extra-curriculars, and leadership involvements</p>
+        </div>
+
+        <div class="achievements-leadership-grid">
+          <!-- Achievements Column -->
+          <div class="glass-card panel-card">
+            <div class="panel-header">
+              <i class="fas fa-trophy panel-icon"></i>
+              <h3>Key Achievements</h3>
+            </div>
+            <div class="panel-body">
+              <div class="achievement-item">
+                <div class="ach-icon-box"><i class="fas fa-shield-alt"></i></div>
+                <div class="ach-text">
+                  <h4>NCC TSC Camp Attendee</h4>
+                  <p>Selected and trained for Thal Sainik Camp (TSC) representing NCC, instilling discipline and resilience.</p>
+                </div>
+              </div>
+              <div class="achievement-item">
+                <div class="ach-icon-box"><i class="fas fa-running"></i></div>
+                <div class="ach-text">
+                  <h4>State-Level Football Player</h4>
+                  <p>Represented regional team in state football tournaments, showcasing teamwork, coordination, and physical fitness.</p>
+                </div>
+              </div>
+              <div class="achievement-item">
+                <div class="ach-icon-box"><i class="fas fa-brain"></i></div>
+                <div class="ach-text">
+                  <h4>NTPC Electron Quiz 2025</h4>
+                  <p>Qualified and competed in the prestigious Regional Round of NTPC Electron Quiz 2025.</p>
+                </div>
+              </div>
+              <div class="achievement-item">
+                <div class="ach-icon-box"><i class="fas fa-medal"></i></div>
+                <div class="ach-text">
+                  <h4>Sports Fest Winner</h4>
+                  <p>Secured gold and podium finishes in university sports festival events representing IT department.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Leadership Column -->
+          <div class="glass-card panel-card" id="leadership">
+            <div class="panel-header">
+              <i class="fas fa-users panel-icon"></i>
+              <h3>Leadership Roles</h3>
+            </div>
+            <div class="panel-body">
+              <div class="leadership-item">
+                <div class="lead-header">
+                  <h4>PR Head</h4>
+                  <span class="lead-org">Quiz Club</span>
+                </div>
+                <p>Heading public relations, social outreach, and event promotions. Increased club session engagement by 40%.</p>
+              </div>
+
+              <div class="leadership-item">
+                <div class="lead-header">
+                  <h4>PR & Media Executive</h4>
+                  <span class="lead-org">IICHE Student Chapter</span>
+                </div>
+                <p>Managed media pipelines, designed outreach campaigns, and coordinated branding for campus seminars and industrial quizzes.</p>
+              </div>
+
+              <div class="leadership-item">
+                <div class="lead-header">
+                  <h4>Kho Kho & Kabaddi Head</h4>
+                  <span class="lead-org">Sports Council</span>
+                </div>
+                <p>Organizing inter-college tournaments, scheduling practice clinics, and leading university teams in regional sports meets.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section scroll-reveal">
+      <div class="section-container">
+        <div class="section-title-wrapper">
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <p class="section-subtitle">Have a question or a project in mind? Drop me a message!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Details / Info Cards -->
+          <div class="contact-info-panel">
+            <h3>Let's talk!</h3>
+            <p>
+              I am open to summer internships, software engineering roles, data analyst positions, or collaborations. Send a message and let's explore how we can work together.
+            </p>
+
+            <div class="contact-methods">
+              <div class="contact-method-card glass-card">
+                <i class="fas fa-envelope"></i>
+                <div class="method-details">
+                  <span class="method-label">Email Me</span>
+                  <a href="mailto:contact@dineshkumar.dev" class="method-value">contact@dineshkumar.dev</a>
+                </div>
+              </div>
+              <div class="contact-method-card glass-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="method-details">
+                  <span class="method-label">Location</span>
+                  <span class="method-value">RGIPT, Jais, Uttar Pradesh, India</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-circles">
+              <h4>Follow Me</h4>
+              <div class="social-buttons">
+                <a href="https://github.com/dinesh-kumar" target="_blank" rel="noopener noreferrer" class="social-btn github-btn" aria-label="GitHub">
+                  <svg class="social-svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/dinesh-kumar-a913a2288" target="_blank" rel="noopener noreferrer" class="social-btn linkedin-btn" aria-label="LinkedIn">
+                  <svg class="social-svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Panel -->
+          <div class="contact-form-panel glass-card">
+            <form id="contact-form" novalidate>
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label for="form-name">Your Name</label>
+                  <div class="input-wrapper">
+                    <i class="fas fa-user input-icon"></i>
+                    <input type="text" id="form-name" placeholder="John Doe" required>
+                  </div>
+                  <span class="error-message" id="name-error">Please enter your name</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-email">Your Email</label>
+                  <div class="input-wrapper">
+                    <i class="fas fa-envelope input-icon"></i>
+                    <input type="email" id="form-email" placeholder="john@example.com" required>
+                  </div>
+                  <span class="error-message" id="email-error">Please enter a valid email address</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject">Subject</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-tag input-icon"></i>
+                  <input type="text" id="form-subject" placeholder="Collaboration / Job Opportunity" required>
+                </div>
+                <span class="error-message" id="subject-error">Please enter a subject</span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Message</label>
+                <div class="input-wrapper">
+                  <textarea id="form-message" rows="5" placeholder="Hi Dinesh, I would love to discuss..." required></textarea>
+                </div>
+                <span class="error-message" id="message-error">Message must be at least 10 characters long</span>
+              </div>
+
+              <button type="submit" class="btn btn-gradient btn-submit" id="submit-btn">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane" id="submit-btn-icon"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Success Notification Modal -->
+  <div class="success-modal-overlay" id="success-modal">
+    <div class="glass-card success-modal-card">
+      <div class="success-icon-badge">
+        <i class="fas fa-check-circle"></i>
+      </div>
+      <h3>Message Sent!</h3>
+      <p>Thank you for reaching out, Dinesh. Your message has been simulated successfully, and I will get back to you shortly.</p>
+      <button class="btn btn-primary" id="close-success-modal">Awesome</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="brand-logo">DK.</span>
+        <p>Full Stack Developer | Data Analytics Enthusiast</p>
+        <a href="https://dineshkumar.dev" class="footer-domain-link">dineshkumar.dev</a>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Dinesh Kumar. All rights reserved. Created with passion.</p>
+        <button id="scroll-to-top" class="scroll-top-btn" aria-label="Scroll to top">
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script File -->
+  <script src="script.js"></script>
+</body>
+</html>
